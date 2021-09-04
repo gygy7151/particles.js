@@ -21,7 +21,7 @@ var Stats = function () {
 
 	var fpsText = document.createElement( 'div' );
 	fpsText.id = 'fpsText';
-	fpsText.style.cssText = 'color:#0ff;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px';
+	fpsText.style.cssText = 'color:#000000;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px';
 	fpsText.innerHTML = 'FPS';
 	fpsDiv.appendChild( fpsText );
 

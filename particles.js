@@ -7,6 +7,23 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
+// To run this effect in loop set 'loop' to true
+const instance = new Typewriter('#typewriter', {
+  loop: true
+});
+
+
+instance.typeString("Hi there!🦊💙 Here is bluevulpe junior frontend developer")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('currently learning<br>Javascript, Java, Python, GraphQL, React')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString('Check out my work at<br>https://foxvox.tistory.com/')
+    .pauseFor(1000)
+    .deleteAll()
+    .start();
+
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -27,7 +44,7 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#fff'
+        value: '#000000'
       },
       shape: {
         type: 'circle',
@@ -67,7 +84,7 @@ var pJS = function(tag_id, params){
       line_linked: {
         enable: true,
         distance: 100,
-        color: '#fff',
+        color: '#000000',
         opacity: 1,
         width: 1
       },
